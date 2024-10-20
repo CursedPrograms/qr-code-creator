@@ -34,6 +34,10 @@
 # qr-code-creator
 
 <br>
+
+https://github.com/CursedPrograms/qr-code-scanner
+
+<br>
 <div align="center">
 © Cursed Entertainment
 </div>
