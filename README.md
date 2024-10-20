@@ -25,7 +25,7 @@
   </div>  
   <br>
 
-# website-template
+# qr-code-creator
 
 <br>
 <div align="center">
