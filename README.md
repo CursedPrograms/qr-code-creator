@@ -13,6 +13,7 @@
     <img src="https://github.com/CursedPrograms/qr-code-creator/raw/main/qr-creator-site.png"
         alt="CursedEntertainment Logo" style="width:250px;">
 </a>
+  </div>
 <a href="https://github.com/CursedPrograms/website-template/actions/workflows/proof-html.yml">
     <img class="workflow-badge workflow-success" src="https://github.com/CursedPrograms/website-template/actions/workflows/proof-html.yml/badge.svg" alt="Proof HTML Workflow">
 </a>
