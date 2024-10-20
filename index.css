@@ -1,61 +1,75 @@
-/* Reset some default browser styles */
-body,
-h1,
-h2,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
+<html><head><base href="">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Creator</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    .container {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    #qrcode {
+        margin-top: 1rem;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Creator</h1>
+        <input type="text" id="text-input" placeholder="Enter text or URL">
+        <button onclick="generateQR()">Generate QR Code</button>
+        <div id="qrcode"></div>
+    </div>
 
-/* Set a base font size and family */
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-}
-
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Style the main content area */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Add additional styling as needed */
-
+    <script>
+        function generateQR() {
+            const text = document.getElementById('text-input').value;
+            if (text) {
+                document.getElementById('qrcode').innerHTML = '';
+                new QRCode(document.getElementById('qrcode'), {
+                    text: text,
+                    width: 128,
+                    height: 128,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+        }
+    </script>
+</body></html>
