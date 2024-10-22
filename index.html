@@ -1,11 +1,17 @@
-<html><head><base href="https://cursedprograms.github.io/qr-code-creator/">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QR Code Creator</title>
-      <link href="https://cursedprograms.github.io/cursedentertainment/cursedFavicon.png" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="index.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<html>
+
+<head>
+    <base href="https://cursedprograms.github.io/qr-code-creator/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Creator</title>
+    <link href="https://cursedprograms.github.io/cursedentertainment/cursedFavicon.png" rel="icon"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
 </head>
+
 <body>
     <div class="container">
         <h1>QR Code Creator</h1>
@@ -15,22 +21,9 @@
     </div>
 
 
-        <footer id="dynamicFooter"></footer>
-  <script src="https://cursedprograms.github.io/cursedentertainment/scripts/footer.js"></script>
-    <script>
-        function generateQR() {
-            const text = document.getElementById('text-input').value;
-            if (text) {
-                document.getElementById('qrcode').innerHTML = '';
-                new QRCode(document.getElementById('qrcode'), {
-                    text: text,
-                    width: 128,
-                    height: 128,
-                    colorDark: "#000000",
-                    colorLight: "#ffffff",
-                    correctLevel: QRCode.CorrectLevel.H
-                });
-            }
-        }
-    </script>
-</body></html>
+    <footer id="dynamicFooter"></footer>
+    <script src="https://cursedprograms.github.io/cursedentertainment/scripts/footer.js"></script>
+    <script src="scripts/generate-qr.js"></script>
+</body>
+
+</html>
