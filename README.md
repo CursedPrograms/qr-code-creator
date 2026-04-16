@@ -25,9 +25,9 @@
   </div>
 <br>
 
-# qr-code-creator
-
 ---
+
+# qr-code-creator
 
 <br>
 <div align="center">
