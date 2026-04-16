@@ -27,6 +27,8 @@
 
 # qr-code-creator
 
+---
+
 <br>
 <div align="center">
 <a href="https://cursedprograms.github.io/qr-code-creator/" target="_blank">
@@ -36,7 +38,11 @@
   </div>
 <br>
 
-https://github.com/CursedPrograms/qr-code-scanner
+---
+
+- [qr-code-scanner](https://github.com/CursedPrograms/qr-code-scanner)
+
+---
 
 <br>
 <div align="center">
