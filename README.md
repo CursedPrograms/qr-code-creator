@@ -33,7 +33,7 @@
 <div align="center">
 <a href="https://cursedprograms.github.io/qr-code-creator/" target="_blank">
     <img src="https://github.com/CursedPrograms/qr-code-creator/raw/main/qr-creator-site.png"
-        alt="CursedEntertainment Logo" style="width:250px;">
+        alt="QR" style="width:250px;">
 </a>
   </div>
 <br>
